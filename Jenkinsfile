@@ -23,7 +23,8 @@ pipeline {
         stage('Git') {
             steps {
                 echo 'My first job pipeline angular'
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/melek10/front.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], 
+                          submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/melek10/front.git']]])
             }
         }
 

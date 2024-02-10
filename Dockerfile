@@ -17,7 +17,7 @@ RUN npm run build
 
 # Stage 2: Final image
 #FROM nginx:alpine
-FROM 106.14.52.175/library/nginx:alpine
+FROM nginx:latest
 
 ## Copier le fichier de configuration Nginx personnalisé
 COPY nginx.conf /etc/nginx/conf.d/default.conf

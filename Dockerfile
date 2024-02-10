@@ -16,7 +16,8 @@ RUN npm install
 RUN npm run build
 
 # Stage 2: Final image
-FROM nginx:alpine
+#FROM nginx:alpine
+FROM registry.docker-cn.com/library/nginx:alpine
 
 ## Copier le fichier de configuration Nginx personnalisé
 COPY nginx.conf /etc/nginx/conf.d/default.conf

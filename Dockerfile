@@ -1,5 +1,5 @@
 # Stage 1: Builder
-FROM node:18.19.0 as builder
+FROM node:20.5.0 as builder
 
 WORKDIR /app
 

@@ -32,6 +32,7 @@ pipeline {
             steps {
                 script {
                     // Utilisez npm du chemin de l'installation de Node.js configuré dans Jenkins
+                    sh 'chmod 777 /var/lib/jenkins/workspace/devopsfront'
                     sh 'npm install'
                 }
             }
